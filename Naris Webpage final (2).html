@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Gokul Mkce Cse
+  </title>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=0.2">
+<script type="text/javascript">
+  alert("Page Created By Gokul R")
+  console.log('a message in console')
+  </script>
+<style>
+body {
+  background-image: url("https://i.imgur.com/7CmHbsj.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  
+  
+}
+header {
+text-align: center;
+font-size: 45px;
+color: white;
+margin-top:1px ;
+}
+#link{
+    text-align:center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-top: 50px;
+  }
+ 
+#int{
+  color: white;
+  text-decoration: none;
+}
+
+#staffs{
+margin-top: 600px;
+font-family: tahoma;
+}
+#staffhead{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(32, 128, 48);
+  font-size: 50px;
+}
+#syllabushead{
+  text-align: center;
+  color: rgb(32, 128, 48);
+    font-size: 50px;
+}
+#galleryhead{
+  text-align: center;
+  color: rgb(32, 128, 48);
+    font-size: 50px;
+}
+#fhead{
+    text-align:left;
+    color: rgb(32, 128, 48);
+    font-size: 50px;
+    margin-right: 666px;
+}
+#form-inside{
+  text-align: left;
+  margin-left: 100px;
+  color: royalblue;
+}
+
+#sname{
+color: rgb(228, 88, 88);
+  }
+
+
+#intro{
+  margin-top: 400px;
+  margin-left: 50px;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+  font-size: 80%;
+  box-sizing: border-box;
+  border-color: white;
+  width: 420px;
+  height: 450px;
+  padding: 20px; 
+
+border-color: gray;
+}
+#intro2{
+  text-align: center;
+  color: royalblue;
+  font-weight: lighter;
+  font-size: 25px;
+}
+ 
+
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td{
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+th{
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(201, 201, 201);
+}
+tr:nth-child(odd) {
+ background-color: rgb(201, 201, 201);
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sem{
+  color: rgb(167, 0, 245);
+}
+#cl{
+  font-size: 50px;
+  color: rgb(0, 4, 255);
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav {
+  float: left;
+  width: 5%;
+  height: 100000px;
+  background: #ccc;
+  padding: 20px;
+}
+article {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  height: 300px; 
+}
+
+
+
+ 
+
+
+
+*{ 
+  box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#tx
+{
+  color:white;
+  font-size: 50px;
+}
+
+.split {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(177, 177, 177);
+  opacity: 0.8;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#external-link{
+    margin-bottom: inherit;
+    margin-top: 111px;
+    size:10%;
+  }
+
+
+</style>
+</head>
+<body>
+
+    
+  
+    <div class="split left">
+      <div class="centered"></div>
+      <header>
+        <H2>CSE DEPARTMENT</H2>
+        </header>
+    <h1 id="link">
+      <a href="#intro2" class="intro2" id="int">INTRO</a><br>
+      <br>
+      <a href="#staffs" class="staffs" id="int">STAFFS</a><br>
+      <br>
+      <a href="#sem" class="sem" id="int">SYLLABUS</a><br>
+      <br>
+      <a href="#yk" class="yk" id="int">GALLERY</a><br>
+      <br>
+      <a href="#fhead" class="form" id="int">FOR CONTACT</a><br>
+      <br>
+      <div class="external link" id="external-link">
+        <a href="https://instagram.com/gokul29122000?igshid=s0bfxu4i6lwt" target="_blank"><img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-png-instagram-logo-camel-productions-website-25.png" style="width:42px;height:42px;"></a>
+        <a href="https://twitter.com/varakappi?s=09" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1-1.png" style="width:38px;height:38px;"></a>
+        <a href="https://github.com/kousikrish21" target="_blank"><img src="https://i.imgur.com/EkLQhVh.png" style="width:42px;height:42px;"></a>
+        <a href="https://www.linkedin.com/in/kaushik-karthikeyan-508466195/" target="_blank"><img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png" style="width:54px;height:54px;"></a>
+        
+       </div>
+    </h1>
+   
+  </div>
+</div>
+  
+
+    <article>
+     <div id="intro" class="intro">
+      <h2 id="intro2">INTRODUCTION</h2>
+      <h3>Vision:</h3>
+      To produce competent industry relevant education, skillful research,<br>
+      technical and innovative computer science professionals acquaintance with managerial skills,<br>
+      human and social values.<br>
+      <br>
+     <h3>Mission:</h3> 
+      To impart technical knowledge through innovative teaching, research, and consultancy.<br>
+      To develop and to promote student ability thereby to compete globally through excellence in education.<br>
+      To facilitate the development of academic-industry Collaboration.<br>
+      To produce competent engineers with professional ethics, technical competence and a spirit of innovation and managerial skills.<br>
+
+     </div>
+     
+     <br>
+     <br>
+
+     <div class="staffs" id="staffs">
+       <h1 id="staffhead" >STAFFS</h1>
+      <h3>
+        <dt id="sname">Dr.S.Thilagamani - HOD/CSE</dt>
+        <dd>
+           <a href="mailto:hodcse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mr.V.Mani - AHOD/CSE</dt>
+        <dd>
+           Subject-Java,Web Programming.<br>
+           <a href="mailto:maniv.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mr.M.Murugesan - AP/CSE</dt>
+        <dd>
+          Subject-Data structures, Database Management System, Python.<br>
+          <a href="mailto:murugesanm.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+      
+      <h3>
+        <dt id="sname">Dr.K.Sumathi - AP/CSE </dt>
+        <dd>
+          Subject-Compiler Design, Big Data Analytics.<br>
+          <a href="mailto:sumathik.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Dr.P.Santhi - AP/CSE</dt>
+        <dd>
+          Subject-Data structures,big Data Analytics.<br>
+          <a href="mailto:santhip.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mr.R.Vikram - AP/CSE</dt>
+        <dd>
+          Subject-Java, Big Data Analytics.<br>
+          <a href="mailto:vikramr.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Ms.K.Jose Triny - AP/CSE</dt>
+        <dd>
+          Subject-Agile Methodologies,Human Computer Interaction.<br>
+          <a href="mailto:josetrinyk.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mrs.K.Deepa - AP/CSE</dt>
+        <dd>
+          Subject-Machine Learning,Deep Learning.<br>
+          <a href="mailto:deepak.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mrs.A.Selvi - AP/CSE</dt>
+        <dd>
+          Subject-Machine Learning, Distributed Computer System.<br>
+          <a href="mailto:selvia.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mrs.K.Makanya Devi - AP/CSE</dt>
+        <dd>
+          Subject-Java.<br>
+          <a href="mailto:kmakanya@gmail.com">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mr.K.Karthik - AP/CSE</dt>
+        <dd>
+          Subject-Python,Big Data Analytics.<br>
+          <a href="mailto:karthikk.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+       
+      <h3>
+        <dt id="sname">Mrs.S.Selvarathi - AP/CSE</dt>
+        <dd>
+          Subject-Python, Web programming.<br>
+          <a href="mailto:selvarathic.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mrs.M.Hemasri - AP/CSE</dt>
+        <dd>
+          Subject-Management principles And Engineers.<br>
+          <a href="mailto:Hemasrim.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Mrs.S.Prabavathi - AP/CSE</dt>
+        <dd>
+          Subject-Computer Architecture And Organisation, Program For Problem Solving.<br>
+          <a href="mailto:prabavathis.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+
+      <h3>
+        <dt id="sname">Dr.P.Pandiyaraja - AP/CSE</dt>
+        <dd>
+          Networks, Operating Systems.<br>
+          <a href="mailto:Pandiarajap.cse@mkce.ac.in">Contact Mail Id</a>
+        </dd>
+      </h3>
+    
+</div>
+<hr>
+
+
+
+
+              <h1 id="syllabushead">SYLLABUS DETAILS FOR CSE</h1>
+              <h2 id="sem" style="text-align:center">III SEMESTER</h2>
+              <table id="tb" class="center" border="2">
+               </tr>
+                 <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  
+                
+                </tr>
+                <tr>
+                 
+                  <td>18MAB203T</td>
+                  <td>PROBABILITY STATISTICS AND QUEUING THEORY</td>
+                </tr>
+                <tr>
+                  
+                  <td>18ECS202JT</td>
+                  <td>ANALOG AND DIGITAL ELECTRONICS</td>
+                </tr>
+                <tr>
+                
+                  <td>18CSC201JT</td>
+                  <td>DATA STRUCTURES AND ALGORITHMS</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC202JT </td>
+                  <td>OBJECT ORIENTED PROGRAMMING</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC203T</td>
+                  <td>OPERATING SYSTEMS</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC204T</td>
+                  <td>COMPUTER ARCHITECTURE AND ORGANIZATION</td>
+                </tr>
+              <tr>
+                 <td>18ECS202JL </td>
+                  <td>ANALOG AND DIGITAL ELECTRONICS LABORATORY</td>
+                </tr>
+                <tr>
+                 
+                  <td>18MBM201L</td>
+                  <td>COMPETENCIES IN SOCIAL SKILLS</td>
+                </tr>
+              <tr>
+                 <td>18CSC201JL</td>
+                  <td>DATA STRUCTURES AND ALGORITHMS LABORATORY</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC202JL</td>
+                  <td>OBJECT ORIENTED PROGRAMMING LABORATORY</td>
+                </tr>
+              </table>
+              
+              
+              <br>
+              <br>
+              <br>
+              
+              <h2 id="sem" style="text-align:center">IV SEMESTER</h2>
+              <table class="center">
+               </tr>
+                 <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                </tr>
+                <tr>
+                 
+                  <td>18MAB206T </td>
+                  <td>DISCRETE MATHEMATICS</td>
+                </tr>
+                <tr>
+                  
+                  <td>18ECS203JT</td>
+                  <td>MICROPROCESSOR AND MICROCONTROLLER</td>
+                </tr>
+                <tr>
+                
+                  <td>18CSC205JT</td>
+                  <td>DATABASE MANAGEMENT SYSTEMS</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC208T </td>
+                  <td>HUMAN COMPUTER INTERACTION</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC206JT</td>
+                  <td>COMPUTER NETWORKS</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC207T</td>
+                  <td>DESIGN AND ANALYSIS OF ALGORITHMS</td>
+                </tr>
+              <tr>
+                 <td>18ECS203JL </td>
+                  <td> MICROPROCESSOR AND MICROCONTROLLER LABORATORY</td>
+                </tr>
+                <tr>
+                 
+                  <td>18MBM202L</td>
+                  <td>CRITICAL AND CREATIVE THINKING SKILLS</td>
+                </tr>
+              <tr>
+                 <td>18CSC206JL</td>
+                  <td>COMPUTER NETWORKS LABORATORY</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC205JL</td>
+                  <td>DATABASE MANAGEMENT SYSTEMS LABORATORY</td>
+                </tr>
+              
+              </table>
+              <br>
+              <br>
+              <br>
+              
+              <h2  id="sem" style="text-align:center">V SEMESTER</h2>
+              <table class="center">
+               </tr>
+                 <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                </tr>
+                <tr>
+                  <td>18CSC301JT </td>
+                  <td>MACHINE LEARNING</td>
+                </tr>
+                <tr>
+                  <td>18CSC302T</td>
+                  <td>COMPILER DESIGN</td>
+                </tr>
+                <tr>
+                  <td>18CSE024T</td>
+                  <td>INTERNET OF THINGS</td>
+                </tr>
+                <tr>
+                  <td>18CSE002T </td>
+                  <td>AGILE METHODOLOGY</td>
+                </tr>
+                <tr>
+                  <td>18CSE028JT</td>
+                  <td>PYTHON PROGRAMMING</td>
+                </tr>
+                <tr>
+                  <td>18MEO001T</td>
+                  <td> INDUSTRIAL SAFETY FOR ENGINEERS</td>
+                </tr>
+              <tr>
+                 <td>18CCS301JL </td>
+                  <td> MACHINE LEARNING LABORATORY</td>
+                </tr>
+                <tr>
+                  <td>18CSE028JL</td>
+                  <td>PYTHON PROGRAMMING LABORATORY</td>
+                </tr>
+              <tr>
+                 <td>18MBM301L</td>
+                  <td>ANALYTICAL AND LOGICAL THINKING SKILLS</td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <br>
+              
+              <h2 id="sem" style="text-align:center">VI SEMESTER</h2>
+              <table class="center">
+               </tr>
+                 <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  
+                
+                </tr>
+                <tr>
+                 
+                  <td>18MBH201T </td>
+                  <td>MANAGEMENT PRINCIPLES FOR ENGINEERS</td>
+                </tr>
+                <tr>
+                  
+                  <td>18CSC303JT</td>
+                  <td>WEB PROGRAMMING</td>
+                </tr>
+                <tr>
+                
+                  <td>18CSC304JT</td>
+                  <td>BIG DATA AND ANALYTICS</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSE013T </td>
+                  <td>DEEP LEARNING</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSE016T</td>
+                  <td>DISTRIBUTED COMPUTING SYSTEMS</td>
+                </tr>
+                <tr>
+                 
+                  <td>18MEO005T</td>
+                  <td>PRODUCT DESIGN AND DEVELOPMENT</td>
+                </tr>
+              <tr>
+                 <td>18CSC303JL</td>
+                  <td> WEB PROGRAMMING LABORATORY</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSC304JL</td>
+                  <td>BIG DATA AND ANALYTICS LABORATORY</td>
+                </tr>
+              <tr>
+                 <td>18MBM302L</td>
+                  <td>EMPLOYABILITY SKILLS AND PRACTICES</td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <br>
+              <h2 id="sem" style="text-align:center">VII SEMESTER</h2>
+              <table class="center">
+               </tr>
+                 <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  
+                
+                </tr>
+                <tr>
+                 
+                  <td>18CSE031T</td>
+                  <td>SOFTWARE ENGINEERING</td>
+                </tr>
+                <tr>
+                  
+                  <td>18CSE005T</td>
+                  <td>BLOCKCHAIN</td>
+                </tr>
+                <tr>
+                
+                  <td>18CSE022J</td>
+                  <td>INSIGHT INTO CLOUD COMPUTING</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSE026J</td>
+                  <td>MOBILE COMPUTING</td>
+                </tr>
+                <tr>
+                 
+                  
+                 <td>18CSE022JL</td>
+                  <td>INSIGHT INTO CLOUD COMPUTING LABORATORY</td>
+                </tr>
+                <tr>
+                 
+                  <td>18CSE026JL</td>
+                  <td>MOBILE COMPUTING LABORATORY</td>
+                </tr>
+              </table>
+              
+              
+              <br>
+              <br>
+              <br>
+              
+              <h2 id="sem" style="text-align:center">VIII SEMESTER</h2>
+              <table class="center">
+               </tr>
+                 <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  
+                
+                </tr>
+                <tr>
+                 
+                  <td>18CSP401L</td>
+                  <td>PROJECT WORK</td>
+                </tr>
+                <tr>
+                  
+                  <td>18CSE019T</td>
+                  <td>GREEN COMPUTING</td>
+                </tr>
+                <tr>
+                
+                  <td>18CSE033T</td>
+                  <td>SOFTWARE TESTING</td>
+                </tr>
+                <tr>
+                 
+                </tr>
+                <tr>     
+              </table>
+              <br>
+              <br>
+              <br>
+
+              <hr>
+
+
+
+  <div class="slideshow-container" id="yk" >
+    <h1 id="galleryhead">GALLERY OF CSE</h1>
+
+    <div class="myslides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="https://i.imgur.com/Qq1Z9o6.jpg" style="width:100%">
+      <div class="text" id="tx">CSE BOIS</div>
+    </div>
+    
+    <div class="myslides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="https://i.imgur.com/7K2yNNf.jpg" style="width:100%">
+      <div class="text"id="tx">Boopesh</div>
+    </div>
+    
+    <div class="myslides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="https://i.imgur.com/vthqIkp.jpg" style="width:100%">
+      <div class="text"id="tx">Gokul</div>
+    </div>
+
+    <div class="myslides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="https://i.imgur.com/lY9TtZk.jpg" style="width:100%">
+      <div class="text"id="tx">Shashang</div>
+    </div>
+
+    <div class="myslides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="https://i.imgur.com/sZNE41y.jpg" style="width:100%">
+      <div class="text"id="tx">Santhosh Kumar</div>
+    </div>
+
+    <div class="myslides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="https://i.imgur.com/A8aC5fL.jpg" style="width:100%">
+      <div class="text"id="tx">Koushik Karthikeyan</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    <br>
+    <hr>
+    <br>
+
+
+
+   <p id="fhead">For Contact:</p>
+<form id="form-inside">
+  <label for="name">Name:</label><br>
+  <input type="text" name="username" placeholder="Enter your name" id="username" required><br>
+  <br>
+  <label for="email_id">Email id:</label><br>
+  <input type="email" name="email" placeholder="Enter your mail" id="email" required><br>
+  <br>
+  <textarea name="message" rows="10" cols="50" placeholder="Type something you want" required></textarea>
+  <br>
+  <input type="submit" value="Submit your details">
+  <br>
+  <br>
+</form>
+               
+
+  </article>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("fade");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+setInterval(() => {
+  plusSlides(1)
+}, 2000);
+</script>
+
+
+</body>
+</html> 
